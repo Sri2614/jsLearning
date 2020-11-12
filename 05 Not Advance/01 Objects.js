@@ -12,7 +12,11 @@ User.prototype.getFirstName = function(){
 
 var hitesh = new User('hitesh', 2);
 hitesh.getCourseCount();
-hitesh.getFirstName();
+
+if(hitesh.hasOwnProperty("firstName")){
+    hitesh.getFirstName();
+}
+
 // console.log(hitesh);
 
 var sam = new User('sam', 3);
